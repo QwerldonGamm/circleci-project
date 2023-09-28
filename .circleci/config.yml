@@ -16,9 +16,9 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - test: null
-        requires:
-          - build
-filters:
-  branches:
-    only: main
+      - test:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
