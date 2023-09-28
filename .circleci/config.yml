@@ -16,10 +16,10 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      -build
+      - build
       - test:
-        requires:
-         -build
+          requires:
+          - build
         filters:
           branches:
             only: main
