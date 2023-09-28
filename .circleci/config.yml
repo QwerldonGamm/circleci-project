@@ -17,10 +17,10 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-    - build
-    - test:
+      - build
+      - test:
         requires:
-        - build
+#        - build
       filters:
         branches:
           only: main
