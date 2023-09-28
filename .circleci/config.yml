@@ -6,6 +6,7 @@ docker:
 steps:
 - checkout
 - run: python main.py
+
 workflows:
 build_application:
 jobs:
